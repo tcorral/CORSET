@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<style type="text/css">
+			iframe
+			{
+				position:absolute;
+				top: -1000px;
+				left: -1000px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				var aScripts = $.makeArray($("script[type=external]"));
+				var nScript = 0;
+				var nLenScripts = aScripts.length;
+				var oScript = null;
+				var oIframe = null;
+				for(nScript = 0; nScript < nLenScripts; nScript++)
+				{
+					oScript = aScripts[nScript];
+					oIframe = document.createElement("iframe");
+					oIframe.name = oScript.id;
+					oIframe.src = "http://www.test.com/iframeTest.html#http://localhost/blank.html";
+					oIframe.posInWindows = window.frames.length;
+					$(oIframe).bind("load", function(eEvent)
+					{
+						var oScript = document.createElement("script");
+						oScript.type = "text/javascript";
+						oScript.text = window.frames[this.posInWindows].name;
+						document.body.appendChild(oScript);
+						oIframe.parentNode.removeChild(oIframe);
+					});
+					oScript.parentNode.removeChild(oScript);
+					document.body.appendChild(oIframe);
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<script type="external" id="http://www.test.com/test.js"></script>
+	</body>
+</html>
