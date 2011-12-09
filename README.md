@@ -6,8 +6,7 @@ Maybe some people can say that the script tag is not under the Cross-domain poli
 The problem was to log uncaught errors with [Hermes.js](https://github.com/tcorral/Hermes.js) when the scripts are in
  different domains (subdomains, CDN...)
 
-[Problem definition in stackoverflow](http://stackoverflow
-.com/questions/5913978/cryptic-script-error-reported-in-javascript-in-chrome-and-firefox)
+[Problem definition in stackoverflow](http://stackoverflow.com/questions/5913978/cryptic-script-error-reported-in-javascript-in-chrome-and-firefox)
 
 Please be carefull with this and only use it under your responsability.
 
@@ -34,5 +33,4 @@ All constructive comments are welcome. I promise I will answer everyone.
 
 ## Agreements
 
-Thanks to [Manuel Flara](https://github.com/manuelflara) to notice me about [this issue](https://github
-.com/tcorral/Hermes.js/issues/1).
+Thanks to [Manuel Flara](https://github.com/manuelflara) to notice me about [this issue](https://github.com/tcorral/Hermes.js/issues/1).
