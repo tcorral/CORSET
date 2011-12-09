@@ -9,6 +9,8 @@ The problem was to log uncaught errors with [Hermes.js](https://github.com/tcorr
 [Problem definition in stackoverflow](http://stackoverflow
 .com/questions/5913978/cryptic-script-error-reported-in-javascript-in-chrome-and-firefox)
 
+Please be carefull with this and only use it under your responsability.
+
 ## How to test problem:
 * Use files in 'problem' folder.
 * Put 'test.js' file in one external domain or simulate it with a proxy, [Fiddler](http://www.fiddler2.com/)...
