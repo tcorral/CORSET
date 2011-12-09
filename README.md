@@ -32,4 +32,5 @@ All constructive comments are welcome. I promise I will answer everyone.
 
 ## Agreements
 
-Thanks to [Manuel Flara](https://github.com/manuelflara) to notice me about this issue.
+Thanks to [Manuel Flara](https://github.com/manuelflara) to notice me about [this issue](https://github
+.com/tcorral/Hermes.js/issues/1).
