@@ -9,6 +9,7 @@
 			{
 				window.name = $(oIframe.contentWindow.document.body).text();
 				window.location = window.location.hash.substr(1);
+				console.log(window.location, window.name);
 			});
 			oIframe.src = window.name;
 			document.body.appendChild(oIframe);
