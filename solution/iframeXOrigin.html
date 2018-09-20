@@ -8,9 +8,9 @@
 			$(oIframe).bind("load", function(eEvent)
 			{
 				window.name = $(oIframe.contentWindow.document.body).text();
-				window.location = window.location.hash.substr(1);
+				window.location.href = window.location.hash.substr(1);
 				debugger;
-				console.log(window.location, window.name, window.frameElement);
+				console.log(window.location.href, window.name, window.frameElement);
 			});
 			oIframe.src = window.name;
 			document.body.appendChild(oIframe);
