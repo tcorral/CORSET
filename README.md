@@ -1,4 +1,7 @@
 # CORSET
+
+## Update: This method doesn't works anymore.
+
 This is a method to break the Cross-domain policy with 'script' tags.
 
 Maybe some people can say that the script tag is not under the Cross-domain policy, and this will be almost right.
