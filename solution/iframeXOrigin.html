@@ -9,6 +9,7 @@
 			{
 				window.name = $(oIframe.contentWindow.document.body).text();
 				window.location = window.location.hash.substr(1);
+				debugger;
 				console.log(window.location, window.name, window.frameElement);
 			});
 			oIframe.src = window.name;
